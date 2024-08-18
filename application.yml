@@ -1,1 +1,2 @@
-url = application url
+config:
+  location: "default"
