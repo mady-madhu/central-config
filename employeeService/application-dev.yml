@@ -1,2 +1,18 @@
 config:
   location: "dev"
+
+## default connection pool
+spring:
+  datasource:
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    datasource:
+      url: jdbc:postgresql://localhost:5433/mydb
+      username: postgres
+      password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
