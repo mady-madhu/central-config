@@ -1,13 +1,12 @@
 ## default connection pool
 spring:
   datasource:
-    datasource:
-      url: jdbc:postgresql://localhost:5433/mydb
-      username: postgres
-      password: postgres
-      hikari:
-        connectionTimeout: 20000
-        maximumPoolSize: 5
+    url: jdbc:postgresql://localhost:5433/mydb
+    username: postgres
+    password: postgres
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
   jpa:
     hibernate:
       ddl-auto: create-drop
